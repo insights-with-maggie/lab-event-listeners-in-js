@@ -71,7 +71,7 @@ describe('Event Handling Tests', () => {
     document.dispatchEvent(mockEvent)
     const keyPressDisplay = document.getElementById('keyPressDisplay')
     expect(keyPressDisplay).not.toBeNull() // Ensure the div exists
-    expect(keyPressDisplay.textContent).toBe('Key pressed: A')
+    expect(keyPressDisplay.textContent).toBe("Key pressed: A")
   })
 
   test('displayUserInput updates the input display in real-time via input event', () => {
@@ -81,6 +81,6 @@ describe('Event Handling Tests', () => {
     textInput.value = 'Hello'
     textInput.dispatchEvent(new Event('input'))
     expect(textInputDisplay).not.toBeNull() // Ensure the div exists
-    expect(textInputDisplay.textContent).toBe('You typed: Hello')
+    expect(textInputDisplay.textContent).toBe("You typed: Hello")
   })
 })
